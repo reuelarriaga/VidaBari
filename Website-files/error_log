@@ -1,0 +1,75 @@
+[13-May-2020 22:48:28 UTC] PHP Notice:  Undefined index: HTTPS in /home/koagrng9wb5r/public_html/vidabari/Website-files/header.php on line 60
+[13-May-2020 23:57:29 UTC] PHP Notice:  Undefined index: isAccepted in /home/koagrng9wb5r/public_html/vidabari/Website-files/signup.php on line 30
+[14-May-2020 00:39:11 UTC] PHP Notice:  Undefined index: HTTPS in /home/koagrng9wb5r/public_html/vidabari/Website-files/header.php on line 60
+[14-May-2020 01:06:13 UTC] PHP Notice:  Undefined index: isFollowing in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 17
+[14-May-2020 01:06:13 UTC] PHP Notice:  Undefined index: lat in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 20
+[14-May-2020 01:06:13 UTC] PHP Notice:  Undefined index: lng in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 21
+[14-May-2020 01:06:13 UTC] PHP Notice:  Undefined index: distance in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 22
+[14-May-2020 01:06:13 UTC] PHP Notice:  Undefined index: category in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 24
+[14-May-2020 01:06:13 UTC] PHP Notice:  Undefined index: sortBy in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 25
+[14-May-2020 01:06:13 UTC] PHP Notice:  Undefined index: keywords in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 26
+[14-May-2020 01:09:42 UTC] PHP Notice:  Undefined index: isFollowing in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 17
+[14-May-2020 01:09:42 UTC] PHP Notice:  Undefined index: lat in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 20
+[14-May-2020 01:09:42 UTC] PHP Notice:  Undefined index: lng in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 21
+[14-May-2020 01:09:42 UTC] PHP Notice:  Undefined index: distance in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 22
+[14-May-2020 01:09:42 UTC] PHP Notice:  Undefined index: category in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 24
+[14-May-2020 01:09:42 UTC] PHP Notice:  Undefined index: sortBy in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 25
+[14-May-2020 01:09:42 UTC] PHP Notice:  Undefined index: keywords in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 26
+[14-May-2020 01:10:08 UTC] PHP Notice:  Undefined index: isFollowing in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 17
+[14-May-2020 01:10:08 UTC] PHP Notice:  Undefined index: lat in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 20
+[14-May-2020 01:10:08 UTC] PHP Notice:  Undefined index: lng in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 21
+[14-May-2020 01:10:08 UTC] PHP Notice:  Undefined index: distance in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 22
+[14-May-2020 01:10:08 UTC] PHP Notice:  Undefined index: category in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 24
+[14-May-2020 01:10:08 UTC] PHP Notice:  Undefined index: sortBy in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 25
+[14-May-2020 01:10:08 UTC] PHP Notice:  Undefined index: keywords in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 26
+[14-May-2020 01:10:31 UTC] PHP Notice:  Undefined index: isFollowing in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 17
+[14-May-2020 01:10:31 UTC] PHP Notice:  Undefined index: lat in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 20
+[14-May-2020 01:10:31 UTC] PHP Notice:  Undefined index: lng in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 21
+[14-May-2020 01:10:31 UTC] PHP Notice:  Undefined index: distance in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 22
+[14-May-2020 01:10:31 UTC] PHP Notice:  Undefined index: category in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 24
+[14-May-2020 01:10:31 UTC] PHP Notice:  Undefined index: sortBy in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 25
+[14-May-2020 01:10:31 UTC] PHP Notice:  Undefined index: keywords in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 26
+[14-May-2020 01:12:08 UTC] PHP Notice:  Undefined index: isFollowing in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 17
+[14-May-2020 01:12:08 UTC] PHP Notice:  Undefined index: lat in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 20
+[14-May-2020 01:12:08 UTC] PHP Notice:  Undefined index: lng in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 21
+[14-May-2020 01:12:08 UTC] PHP Notice:  Undefined index: distance in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 22
+[14-May-2020 01:12:08 UTC] PHP Notice:  Undefined index: category in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 24
+[14-May-2020 01:12:08 UTC] PHP Notice:  Undefined index: sortBy in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 25
+[14-May-2020 01:12:08 UTC] PHP Notice:  Undefined index: keywords in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 26
+[14-May-2020 01:27:59 UTC] PHP Notice:  Undefined index: isFollowing in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 17
+[14-May-2020 01:27:59 UTC] PHP Notice:  Undefined index: option in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 18
+[14-May-2020 01:27:59 UTC] PHP Notice:  Undefined index: upObjID in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 19
+[14-May-2020 01:27:59 UTC] PHP Notice:  Undefined variable: keywords in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 89
+[14-May-2020 01:27:59 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 89
+[14-May-2020 01:29:09 UTC] PHP Notice:  Undefined index: isFollowing in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 17
+[14-May-2020 01:29:09 UTC] PHP Notice:  Undefined index: option in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 18
+[14-May-2020 01:29:09 UTC] PHP Notice:  Undefined index: upObjID in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 19
+[14-May-2020 01:29:09 UTC] PHP Notice:  Undefined variable: keywords in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 89
+[14-May-2020 01:29:09 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 89
+[14-May-2020 01:29:14 UTC] PHP Notice:  Undefined index: isFollowing in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 17
+[14-May-2020 01:29:14 UTC] PHP Notice:  Undefined index: option in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 18
+[14-May-2020 01:29:14 UTC] PHP Notice:  Undefined index: upObjID in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 19
+[14-May-2020 01:29:14 UTC] PHP Notice:  Undefined variable: keywords in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 89
+[14-May-2020 01:29:14 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 89
+[14-May-2020 01:36:56 UTC] PHP Notice:  Undefined index: isFollowing in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 17
+[14-May-2020 01:36:56 UTC] PHP Notice:  Undefined index: option in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 18
+[14-May-2020 01:36:56 UTC] PHP Notice:  Undefined index: upObjID in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 19
+[14-May-2020 01:36:56 UTC] PHP Notice:  Undefined variable: keywords in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 89
+[14-May-2020 01:36:56 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 89
+[14-May-2020 01:41:25 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/koagrng9wb5r/public_html/vidabari/Website-files/upload-image.php on line 14
+[14-May-2020 01:41:35 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/koagrng9wb5r/public_html/vidabari/Website-files/upload-image.php on line 14
+[14-May-2020 01:46:10 UTC] PHP Notice:  Undefined index: isFollowing in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 17
+[14-May-2020 01:46:10 UTC] PHP Notice:  Undefined index: option in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 18
+[14-May-2020 01:46:10 UTC] PHP Notice:  Undefined index: upObjID in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 19
+[14-May-2020 01:46:10 UTC] PHP Notice:  Undefined variable: keywords in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 89
+[14-May-2020 01:46:10 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/koagrng9wb5r/public_html/vidabari/Website-files/query-ads.php on line 89
+[14-May-2020 01:47:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getObjectId() on null in /home/koagrng9wb5r/public_html/vidabari/Website-files/settings.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/koagrng9wb5r/public_html/vidabari/Website-files/settings.php on line 35
+[15-May-2020 02:58:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getObjectId() on null in /home/koagrng9wb5r/public_html/vidabari/Website-files/account.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/koagrng9wb5r/public_html/vidabari/Website-files/account.php on line 36
+[15-May-2020 03:16:26 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/koagrng9wb5r/public_html/vidabari/Website-files/account.php on line 38
+[15-May-2020 03:16:29 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/koagrng9wb5r/public_html/vidabari/Website-files/account.php on line 38
