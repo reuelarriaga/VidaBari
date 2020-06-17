@@ -19,32 +19,18 @@ use Parse\ParseSessionStorage;
 $currentUser = ParseUser::getCurrentUser();
 $cuObjectID = $currentUser->getObjectId();
 
-$username = $_GET['username'];
-$fullName = $_GET['fullName'];
-$email = $_GET['email'];
 $weight = $_GET['weight'];
 $height = $_GET['height'];
-$date = $_GET['date'];
-$bio = $_GET['bio'];
-$fileURL = $_GET['fileURL'];
+
 
 // prepare data
-$currentUser->set($USER_USERNAME, $username);
-$currentUser->set($USER_FULLNAME, $fullName);
-$currentUser->set($USER_EMAIL, $email);
-$currentUser->set($USER_BIO, $bio);
 $currentUser->set($USER_WEIGHT, $weight);
 $currentUser->set($USER_HEIGHT, $height);
 
-// avatar
-$file = ParseFile::createFromFile($fileURL, "avatar.jpg");
-$file->save();
-$currentUser->set($USER_AVATAR, $file);
-$currentUser->save();
 
 // save...
 try { $currentUser->save();
-  echo 'Perfil atualizado com sucesso!';
+  echo 'IMC cálculado com sucesso!';
 // error 
 } catch (ParseException $ex) { echo $ex->getMessage(); }
 ?>

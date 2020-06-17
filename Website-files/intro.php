@@ -58,7 +58,7 @@ ParseUser::logOut();
 	            <p class="intro-p" style="color: black"><b>OU USE O SEU EMAIL</b></p>
 
 	            <!-- sign up button -->
-	            <a href="signup.php" class="btn btn-signup">Cadastrar</a>
+	            <a href="signup.php" align="center" class="btn btn-signup">Cadastrar</a>
 	            <br><br>
 
 	            <p style="color: black">Já possui cadastro? <a href="login.php" style="color: var(--main-color);"><strong style="color: black">Entrar</strong></a></p>

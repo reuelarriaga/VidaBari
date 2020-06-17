@@ -66,7 +66,7 @@ use Parse\ParseGeoPoint;
 	   <?php } else { ?> <a href="intro.php"> <?php } ?>
 		<img src="assets/images/tab_chats.png" style="width: 44px;"> Dicas</a>
     	
-		<?php if ($currentUser) { ?> <a href="account.php">
+		<?php if ($currentUser) { ?> <a href="settings.php">
 	   <?php } else { ?> <a href="intro.php"> <?php } ?>
       <img src="assets/images/tab_account_active.png" style="width: 44px;"> Minha Conta</a>
 	</div><!-- ./ right sidebarmenu -->
@@ -82,6 +82,9 @@ use Parse\ParseGeoPoint;
             // avatar
             $avatarImg = $currentUser->get($USER_AVATAR);
             $avatarURL = $avatarImg->getURL();
+            // evolution
+            $evolutionFile = $currentUser->get($USER_EVOLUTION);
+            $evolutionURL = $evolutionFile->getURL();
             // bio
             $bio = $currentUser->get($USER_BIO);
             // verified
@@ -105,9 +108,67 @@ use Parse\ParseGeoPoint;
                         <p><?php if ($bio != null) { echo $bio; } ?></p>
                     </div>
                 </div>
+                <br>
             </div>
         </div><!-- ./ row -->
         <br>
+    <!-- notificações -->
+    <div class="container">
+
+        <?php
+            try {
+                $query = new ParseQuery($NOTIFICATIONS_CLASS_NAME);
+                $query->equalTo($NOTIFICATIONS_OTHER_USER, $currentUser);
+                $query->descending($NOTIFICATIONS_CREATED_AT);
+
+                // perform query
+                $notifArray = $query->find(); 
+                if (count($notifArray) != 0) {
+                    for ($i = 0;  $i < count($notifArray); $i++) {
+                        // Parse Obj
+                        $nObj = $notifArray[$i];
+
+                        // userPointer
+                        $userPointer = $nObj->get($NOTIFICATIONS_CURRENT_USER);
+                        $userPointer->fetch();
+
+                        // avatar
+                        $avFile = $userPointer->get($USER_AVATAR);
+                        $avatarURL = $avFile->getURL();
+
+                        // fullname
+                        $upName = $userPointer->get($USER_FULLNAME);
+
+                        // date
+                        $date = $nObj->getCreatedAt();
+                        $dateStr = date_format($date,"Y/m/d H:i:s");
+
+                        // notification
+                        $notification = $nObj->get($NOTIFICATIONS_TEXT); ?>
+                            
+                        <!-- notification cell -->
+                        <div class="col-lg-12 col-md-12">
+                            <div class="notification-cell">
+                                <a href="user-profile.php?upObjID=<?php  echo $userPointer->getObjectId() ?>">
+                                    <img src="<?php echo $avatarURL ?>">
+                                    <span><?php echo $upName ?></span></a> &nbsp;&nbsp; <?php echo time_ago($dateStr) ?>
+                                    <p><?php echo $notification ?></p>
+                                </div>
+                            </div>
+                    <?php }// ./ For
+              
+                // no notifications
+                } else { ?>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="text-center" style="margin-top: 40px;">Sem notificações.</div>
+                    </div>
+                <?php }
+
+            // error
+            } catch (ParseException $e){ echo $e->getMessage(); }
+        ?>
+
+    </div><!-- /.container -->
 
         <!-- adsGrid -->
         <div class="row" id="adsGrid"></div>
@@ -133,6 +194,8 @@ use Parse\ParseGeoPoint;
 		 function closeSidebar() {
 			  document.getElementById("right-sidebar").style.width = "0";
 		 }
+		 
+		 
     </script>
 
   </body>

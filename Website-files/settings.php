@@ -29,25 +29,26 @@ use Parse\ParseGeoPoint;
 
     <!-- bottom navbar -->
     <div class="bottom-navbar" id="bottom-navbar">
-        <a href="index.php"><img src="assets/images/tab_home.png" style="width: 44px;"></a>
-        <?php $currentUser = ParseUser::getCurrentUser();
-        if (!$currentUser) { header("Refresh:0; url=intro.php"); }
-        $cuObjID = $currentUser->getObjectId();
+        <a href="account.php"><img src="assets/images/tab_home.png" style="width: 44px;"></a>
+        <?php $currentUser = ParseUser::getCurrentUser(); ?>
+		  
+        <?php if (!$currentUser) { header("Refresh:0; url=intro.php"); }
+		  $cuObjID = $currentUser->getObjectId();
 
         if ($currentUser) { ?> <a href="following.php">
-	    <?php } else { ?> <a href="intro.php"> <?php } ?>
+	     <?php } else { ?> <a href="intro.php"> <?php } ?>
         <img src="assets/images/tab_following.png" style="width: 44px; margin-left: 20px;"></a>
-        
+		  
         <?php if ($currentUser) { ?> <a href="notifications.php">
-        <?php } else { ?> <a href="intro.php"> <?php } ?>
+	     <?php } else { ?> <a href="intro.php"> <?php } ?>
         <img src="assets/images/tab_notifications.png" style="width: 44px; margin-left: 20px;"></a>
         
-        <?php if ($currentUser) { ?> <a href="chats.php">
-            <?php } else { ?> <a href="intro.php"> <?php } ?>
+		  <?php if ($currentUser) { ?> <a href="dicas.php">
+	     <?php } else { ?> <a href="intro.php"> <?php } ?>
         <img src="assets/images/tab_chats.png" style="width: 44px; margin-left: 20px;"></a>
         
-        <?php if ($currentUser) { ?> <a href="account.php">
-        <?php } else { ?> <a href="intro.php"> <?php } ?>
+		  <?php if ($currentUser) { ?> <a href="account.php">
+	     <?php } else { ?> <a href="intro.php"> <?php } ?>
         <img src="assets/images/tab_account_active.png" style="width: 44px; margin-left: 20px;"></a>
     </div><!-- ./ bottom navbar -->
 
@@ -69,7 +70,6 @@ use Parse\ParseGeoPoint;
 	   <?php } else { ?> <a href="intro.php"> <?php } ?>
       <img src="assets/images/tab_account_active.png" style="width: 44px;"> Minha Conta</a>
 	</div><!-- ./ right sidebarmenu -->
-
 
     <!-- container -->
     <div class="container">
@@ -99,15 +99,15 @@ use Parse\ParseGeoPoint;
 
                 <!-- username -->
                 <div>
-		            <i class="fas fa-user" style="font-size: 22px; color: var(--main-color); margin-right: 10px; float: left;"></i> Nome de Usuário: 
-		            <input type="text" id="username" class="settings-input" placeholder="Nome de usuário" value="<?php echo $username ?>">
+		            <i class="fas fa-user" style="font-size: 22px; color: var(--main-color); margin-right: 10px; float: left;"></i> Nome de usuário: 
+		            <input type="text" id="username" class="settings-input" placeholder="Informe um nome de usuário" value="<?php echo $username ?>">
 	        	</div>
 	        	<br><br><div class="separator"></div>
 
                 <!-- name -->
                 <div>
-	                <i class="fas fa-user" style="font-size: 22px; color: var(--main-color); margin-right: 10px;"></i> Nome: 
-	                <input type="text" id="fullName" class="settings-input" placeholder="Seu nome completo" value="<?php echo $fullname ?>">
+	                <i class="fas fa-user" style="font-size: 22px; color: var(--main-color); margin-right: 10px;"></i> Nome Completo: 
+	                <input type="text" id="fullName" class="settings-input" placeholder="Informe seu nome completo" value="<?php echo $fullname ?>">
             	</div>
                 <br><br><div class="separator"></div>
 
@@ -121,7 +121,7 @@ use Parse\ParseGeoPoint;
                 <!-- bio -->
                 <div>
                 	<i class="fas fa-pen-nib" style="font-size: 22px; color: var(--main-color); margin-right: 10px;"></i> Bio: 
-                	<textarea id="bio" class="settings-textarea" placeholder="Sobre você"><?php if ($bio != null) { echo $bio; } ?></textarea>
+                	<textarea id="bio" class="settings-textarea" placeholder="Fale um pouco mais sobre você."><?php if ($bio != null) { echo $bio; } ?></textarea>
                 	<br><br><br><br>
             	</div>
                 <br><br><div class="separator"></div>
@@ -144,19 +144,19 @@ use Parse\ParseGeoPoint;
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title text-center" id="myModalLabel">Atualizar foto</h5>
+                    <h5 class="modal-title text-center" id="myModalLabel">Enviar imagens</h5>
                 </div>
                 <div class="modal-body">
                     
                     <!-- drag and drop image area -->
                     <div id="drop-area">
                         <form class="drop-form">
-                            <p>Arraste a imagem aqui, ou clique <strong>Selecionar imagem</strong> para atualizar sua foto de perfil</p>
+                            <p>Solte sua imagem aqui ou clique em <strong>Selecione a imagem</strong> Carregar sua foto de perfil</p>
                             <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
                             <label class="btn btn-select-img" for="fileElem">Selecionar imagem</label>
                           </form>
                           <progress id="progress-bar" max=100 value=0 style="display: none;"></progress>
-                            <div id="gallery" /></div>
+                            <div id="Galeria" /></div>
                     </div>
                     <br>
                 </div><!-- ./ modal body -->
@@ -190,14 +190,14 @@ use Parse\ParseGeoPoint;
     	var bio = document.getElementById('bio').value;
     	var fileURL = document.getElementById('fileURL').value;
 
-    	console.log('USERNAME: ' + username);
-    	console.log('FULL NAME: ' + fullName);
+    	console.log('NOME DE USUÁRIO: ' + username);
+    	console.log('NOME COMPLETO: ' + fullName);
     	console.log('EMAIL: ' + email);
     	console.log('BIO: ' + bio);
-    	console.log('FILE URL: ' + fileURL);
+    	console.log('URL DE ARQUIVO: ' + fileURL);
 
     	// ajax call
-    	document.getElementById('loadingText').innerHTML = " Atualizando perfil...";
+    	document.getElementById('loadingText').innerHTML = " Atualizando seu perfil...";
     	$('#loadingModal').modal('show');
 
     	$.ajax({
